@@ -1,0 +1,28 @@
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+
+.navbar-custom {
+    @extend .navbar-dark;
+
+    .navbar-nav {
+        .nav-link {
+            &:hover,
+            &:focus {
+                color: $yellow;
+            }
+        }
+    }
+
+    .navbar-brand {
+        font-size: $font-size-base * 1.6;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+
+        &:hover,
+        &:focus {
+            color: $yellow;
+            cursor: pointer;
+        }
+    }
+}
