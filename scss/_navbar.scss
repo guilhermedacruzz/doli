@@ -1,2 +1,10 @@
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
+
+.navbar-custom {
+    @extend .navbar-dark;
+
+    .navbar-brand {
+        font-size: $font-size-base * 1.5;
+    }
+}
