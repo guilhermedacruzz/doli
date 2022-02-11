@@ -4718,24 +4718,26 @@ progress {
     color: #dc3545;
     background-color: transparent; }
 
-.btn-outline-light {
+.btn-outline-light, .navbar-custom .btn-buy {
   color: #ffffff;
   border-color: #ffffff; }
-  .btn-outline-light:hover {
+  .btn-outline-light:hover, .navbar-custom .btn-buy:hover {
     color: #000;
     background-color: #ffffff;
     border-color: #ffffff; }
-  .btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
+  .btn-check:focus + .btn-outline-light, .navbar-custom .btn-check:focus + .btn-buy, .btn-outline-light:focus, .navbar-custom .btn-buy:focus {
     box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5); }
-  .btn-check:checked + .btn-outline-light,
-  .btn-check:active + .btn-outline-light, .btn-outline-light:active, .btn-outline-light.active, .btn-outline-light.dropdown-toggle.show {
+  .btn-check:checked + .btn-outline-light, .navbar-custom .btn-check:checked + .btn-buy,
+  .btn-check:active + .btn-outline-light,
+  .navbar-custom .btn-check:active + .btn-buy, .btn-outline-light:active, .navbar-custom .btn-buy:active, .btn-outline-light.active, .navbar-custom .active.btn-buy, .btn-outline-light.dropdown-toggle.show, .navbar-custom .dropdown-toggle.show.btn-buy {
     color: #000;
     background-color: #ffffff;
     border-color: #ffffff; }
-    .btn-check:checked + .btn-outline-light:focus,
-    .btn-check:active + .btn-outline-light:focus, .btn-outline-light:active:focus, .btn-outline-light.active:focus, .btn-outline-light.dropdown-toggle.show:focus {
+    .btn-check:checked + .btn-outline-light:focus, .navbar-custom .btn-check:checked + .btn-buy:focus,
+    .btn-check:active + .btn-outline-light:focus,
+    .navbar-custom .btn-check:active + .btn-buy:focus, .btn-outline-light:active:focus, .navbar-custom .btn-buy:active:focus, .btn-outline-light.active:focus, .navbar-custom .active.btn-buy:focus, .btn-outline-light.dropdown-toggle.show:focus, .navbar-custom .dropdown-toggle.show.btn-buy:focus {
       box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5); }
-  .btn-outline-light:disabled, .btn-outline-light.disabled {
+  .btn-outline-light:disabled, .navbar-custom .btn-buy:disabled, .btn-outline-light.disabled, .navbar-custom .disabled.btn-buy {
     color: #ffffff;
     background-color: transparent; }
 
@@ -5249,6 +5251,13 @@ progress {
 
 .navbar-custom .navbar-nav .nav-link:hover, .navbar-custom .navbar-nav .nav-link:focus {
   color: #fca311; }
+
+.navbar-custom .btn-buy {
+  color: #fca311;
+  border-color: #fca311; }
+  .navbar-custom .btn-buy:hover {
+    background-color: #fca311;
+    border-color: #fca311; }
 
 .navbar-custom .navbar-brand {
   font-size: 1.6rem;
