@@ -10,8 +10,36 @@
         top: 30%;
     }
 
+    .btn-carousel {
+        @extend .btn-outline-light;
+
+        &:hover {
+            .fa-arrow-right {
+                color: $warning;
+                margin-left: 20px;
+                transform: scaleX(-1);
+            }
+
+            .fa-arrow-left {
+                color: $warning;
+                margin-right: 20px;
+                transform: scaleX(-1);
+            }
+        }
+    }
+
     img {
         height: 100%;
         object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .carousel-content-left {
+        border-left: 8px solid $warning;
+    }
+
+    .carousel-content-right {
+        border-right: 8px solid $warning;
     }
 }

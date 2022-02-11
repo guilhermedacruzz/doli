@@ -4718,26 +4718,28 @@ progress {
     color: #dc3545;
     background-color: transparent; }
 
-.btn-outline-light, .navbar-custom .btn-buy {
+.btn-outline-light, .navbar-custom .btn-buy, #carousel-content .btn-carousel {
   color: #ffffff;
   border-color: #ffffff; }
-  .btn-outline-light:hover, .navbar-custom .btn-buy:hover {
+  .btn-outline-light:hover, .navbar-custom .btn-buy:hover, #carousel-content .btn-carousel:hover {
     color: #000;
     background-color: #ffffff;
     border-color: #ffffff; }
-  .btn-check:focus + .btn-outline-light, .navbar-custom .btn-check:focus + .btn-buy, .btn-outline-light:focus, .navbar-custom .btn-buy:focus {
+  .btn-check:focus + .btn-outline-light, .navbar-custom .btn-check:focus + .btn-buy, #carousel-content .btn-check:focus + .btn-carousel, .btn-outline-light:focus, .navbar-custom .btn-buy:focus, #carousel-content .btn-carousel:focus {
     box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5); }
-  .btn-check:checked + .btn-outline-light, .navbar-custom .btn-check:checked + .btn-buy,
+  .btn-check:checked + .btn-outline-light, .navbar-custom .btn-check:checked + .btn-buy, #carousel-content .btn-check:checked + .btn-carousel,
   .btn-check:active + .btn-outline-light,
-  .navbar-custom .btn-check:active + .btn-buy, .btn-outline-light:active, .navbar-custom .btn-buy:active, .btn-outline-light.active, .navbar-custom .active.btn-buy, .btn-outline-light.dropdown-toggle.show, .navbar-custom .dropdown-toggle.show.btn-buy {
+  .navbar-custom .btn-check:active + .btn-buy,
+  #carousel-content .btn-check:active + .btn-carousel, .btn-outline-light:active, .navbar-custom .btn-buy:active, #carousel-content .btn-carousel:active, .btn-outline-light.active, .navbar-custom .active.btn-buy, #carousel-content .active.btn-carousel, .btn-outline-light.dropdown-toggle.show, .navbar-custom .dropdown-toggle.show.btn-buy, #carousel-content .dropdown-toggle.show.btn-carousel {
     color: #000;
     background-color: #ffffff;
     border-color: #ffffff; }
-    .btn-check:checked + .btn-outline-light:focus, .navbar-custom .btn-check:checked + .btn-buy:focus,
+    .btn-check:checked + .btn-outline-light:focus, .navbar-custom .btn-check:checked + .btn-buy:focus, #carousel-content .btn-check:checked + .btn-carousel:focus,
     .btn-check:active + .btn-outline-light:focus,
-    .navbar-custom .btn-check:active + .btn-buy:focus, .btn-outline-light:active:focus, .navbar-custom .btn-buy:active:focus, .btn-outline-light.active:focus, .navbar-custom .active.btn-buy:focus, .btn-outline-light.dropdown-toggle.show:focus, .navbar-custom .dropdown-toggle.show.btn-buy:focus {
+    .navbar-custom .btn-check:active + .btn-buy:focus,
+    #carousel-content .btn-check:active + .btn-carousel:focus, .btn-outline-light:active:focus, .navbar-custom .btn-buy:active:focus, #carousel-content .btn-carousel:active:focus, .btn-outline-light.active:focus, .navbar-custom .active.btn-buy:focus, #carousel-content .active.btn-carousel:focus, .btn-outline-light.dropdown-toggle.show:focus, .navbar-custom .dropdown-toggle.show.btn-buy:focus, #carousel-content .dropdown-toggle.show.btn-carousel:focus {
       box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5); }
-  .btn-outline-light:disabled, .navbar-custom .btn-buy:disabled, .btn-outline-light.disabled, .navbar-custom .disabled.btn-buy {
+  .btn-outline-light:disabled, .navbar-custom .btn-buy:disabled, #carousel-content .btn-carousel:disabled, .btn-outline-light.disabled, .navbar-custom .disabled.btn-buy, #carousel-content .disabled.btn-carousel {
     color: #ffffff;
     background-color: transparent; }
 
@@ -5453,6 +5455,22 @@ progress {
 #carousel-content .carousel-caption {
   top: 30%; }
 
+#carousel-content .btn-carousel:hover .fa-arrow-right {
+  color: #fca311;
+  margin-left: 20px;
+  transform: scaleX(-1); }
+
+#carousel-content .btn-carousel:hover .fa-arrow-left {
+  color: #fca311;
+  margin-right: 20px;
+  transform: scaleX(-1); }
+
 #carousel-content img {
   height: 100%;
   object-fit: cover; }
+
+@media only screen and (min-width: 992px) {
+  .carousel-content-left {
+    border-left: 8px solid #fca311; }
+  .carousel-content-right {
+    border-right: 8px solid #fca311; } }
