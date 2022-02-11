@@ -5435,5 +5435,13 @@ progress {
 .carousel-dark .carousel-caption {
   color: #000; }
 
-#carousel-content {
-  max-height: 80vh; }
+#carousel-content .carousel-inner,
+#carousel-content .carousel-item {
+  height: 80vh; }
+
+#carousel-content .carousel-caption {
+  top: 30%; }
+
+#carousel-content img {
+  height: 100%;
+  object-fit: cover; }
