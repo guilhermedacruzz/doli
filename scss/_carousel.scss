@@ -1,0 +1,17 @@
+@import "../node_modules/bootstrap/scss/carousel";
+
+#carousel-content {
+    .carousel-inner,
+    .carousel-item {
+        height: 80vh;
+    }
+
+    .carousel-caption {
+        top: 30%;
+    }
+
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
