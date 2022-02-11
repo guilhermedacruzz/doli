@@ -5260,6 +5260,7 @@ progress {
     border-color: #fca311; }
 
 .navbar-custom .navbar-brand {
+  color: #e5e5e5;
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 2px;
