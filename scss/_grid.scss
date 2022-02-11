@@ -1,7 +1,1 @@
 @import "../node_modules/bootstrap/scss/grid";
-
-.row-custom {
-    @extend .row;
-    border: $border-width solid $primary;
-    border-radius: $border-radius-lg;
-}
