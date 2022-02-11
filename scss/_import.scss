@@ -1,4 +1,5 @@
 @import "../node_modules/bootstrap/scss/functions";
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
 $primary:       #14213d;
 $secondary:     #e5e5e5;
@@ -8,6 +9,8 @@ $warning:       #fca311;
 //$danger:        $red;
 $light:         #ffffff;
 $dark:          #000000;
+
+$font-family-sans-serif: "Poppins", sans-serif;
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
