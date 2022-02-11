@@ -8,7 +8,7 @@
         .nav-link {
             &:hover,
             &:focus {
-                color: $yellow;
+                color: $warning;
             }
         }
     }
@@ -21,7 +21,7 @@
 
         &:hover,
         &:focus {
-            color: $yellow;
+            color: $warning;
             cursor: pointer;
         }
     }

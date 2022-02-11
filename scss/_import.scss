@@ -1,5 +1,14 @@
 @import "../node_modules/bootstrap/scss/functions";
 
+$primary:       #14213d;
+$secondary:     #e5e5e5;
+//$success:       $green;
+//$info:          $cyan;
+$warning:       #fca311;
+//$danger:        $red;
+$light:         #ffffff;
+$dark:          #000000;
+
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
