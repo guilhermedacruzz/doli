@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -9,14 +9,14 @@
     <script defer src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
     <script defer src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
     <script defer src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
-    <title>teste</title>
+    <title>Dolycoin</title>
 </head>
 
 <body class="bg-dark text-white">
 
     <!-- Start Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-custom px-2 px-md-5">
+        <nav class="navbar navbar-expand-lg navbar-custom px-2 px-lg-5">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -24,25 +24,42 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a class="navbar-brand">
+                <a class="navbar-brand p-2 me-2">
                     <i class="fas fa-coins"></i>
                     Dolycoin
                 </a>
                 <div class="collapse navbar-collapse my-3 my-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item p-2">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item p-2">
                             <a class="nav-link" href="#">Sobre</a>
                         </li>
                     </ul>
-                </div>
 
-                <button class="btn btn-outline-light">
-                    <i class="fas fa-shopping-bag fa-bounce"></i>
-                    Comprar
-                </button>
+                    <hr class="d-lg-none text-white-50">
+
+                    <ul class="navbar-nav flex-row ms-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#"><i class="fa-brands fa-telegram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#"><i class="fa-solid fa-hand-holding-medical"></i></a>
+                        </li>
+                    </ul>
+                    
+                    <button class="btn btn-buy my-2 my-lg-0 ms-lg-3">
+                        <i class="fas fa-shopping-bag fa-bounce"></i>
+                        Comprar
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
@@ -61,22 +78,25 @@
                     <div class="carousel-item active">
                         <img src="assets/images/2.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-md-block">
-                            <div class="d-flex flex-column align-items-center align-items-md-start">
+                            <div class="carousel-content-left d-flex flex-column align-items-center align-items-lg-start ps-3">
                                 <h2 class="h2">Lorem ipsum dolor sit amet.</h2>
                                 <p class="lead">Lorem ipsum dolor sit amet consectetur. <span class="text-muted">Lorem,
                                         ipsum dolor.</span></p>
-                                <button class="btn btn-light">Leia Mais <i class="fa-solid fa-arrow-right"></i></button>
+                                <button type="button" class="btn btn-carousel">
+                                    Leia Mais
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="assets/images/3.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-md-block">
-                            <div class="d-flex flex-column align-items-center align-items-md-end">
+                            <div class="carousel-content-right d-flex flex-column align-items-center align-items-lg-end pe-3">
                                 <h2 class="h2">Lorem ipsum dolor sit amet.</h2>
                                 <p class="lead">Lorem ipsum dolor sit amet consectetur. <span class="text-muted">Lorem,
                                         ipsum dolor.</span></p>
-                                <button class="btn btn-light"><i class="fa-solid fa-arrow-left"></i> Leia Mais</button>
+                                <button class="btn btn-carousel"><i class="fa-solid fa-arrow-left"></i> Leia Mais</button>
                             </div>
                         </div>
                     </div>
@@ -93,65 +113,82 @@
                 </button>
             </div>
 
-            <div class="d-flex flex-column align-items-center p-5">
+            <div class="d-flex flex-column align-items-center justify-content-center p-5">
                 <div class="d-flex justify-content-center p-5">
                     <h1 class="h1">Lorem ipsum dolor sit amet.</h1>
                 </div>
-                <div class="row featurette m-0 m-y-2 p-4 w-100">
-                    <div class="col-md-7">
-                        <h2 class="h2 featurette-heading">Lorem ipsum dolor sit. <span class="text-muted">Lorem, ipsum dolor.</span></h2>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusamus
+                <div class="row featurette my-2 my-4 p-4 w-100">
+                    <div class="col-md-7 border-start border-warning border-5 p-2 ps-4">
+                        <h2 class="h2 featurette-heading">Lorem ipsum dolor sit. <span class="h3 text-muted">Lorem, ipsum dolor.</span></h2>
+                        <p class="lead text-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusamus
                             provident a explicabo temporibus labore iste pariatur esse dolore magnam.</p>
                     </div>
-                    <div class="col-md-5" align="center">
-                        <img src="assets/images/1.jpg" class="img-fluid mx-auto featurette-image bd-placeholder-img bd-placeholder-img-lg">
+                    <div class="col-md-5 py-3" align="center">
+                        <img src="assets/images/2.jpg" class="img-fluid mx-auto rounded-1 featurette-image bd-placeholder-img bd-placeholder-img-lg">
                     </div>
                 </div>
-                <div class="row featurette m-0 m-y-2 p-4 w-100">
-                    <div class="col-md-7 order-md-2">
-                        <h2 class="h2 featurette-heading">Lorem ipsum dolor sit. <span class="text-muted">Lorem, ipsum dolor.</span></h2>
+                <div class="row featurette mx-2 my-4 p-4 w-100">
+                    <div class="col-md-7 border-end border-warning border-5 p-2 pe-4 text-end order-md-2">
+                        <h2 class="h2 featurette-heading ">Lorem ipsum dolor sit. <span class="h3 text-muted">Lorem, ipsum dolor.</span></h2>
                         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusamus
                             provident a explicabo temporibus labore iste pariatur esse dolore magnam.</p>
                     </div>
-                    <div class="col-md-5 order-md-1" align="center">
-                        <img src="assets/images/1.jpg" class="img-fluid mx-auto featurette-image bd-placeholder-img bd-placeholder-img-lg">
+                    <div class="col-md-5 order-md-1 py-3" align="center">
+                        <img src="assets/images/2.jpg" class="img-fluid mx-auto rounded-1 featurette-image bd-placeholder-img bd-placeholder-img-lg">
+                    </div>
+                </div>
+                <div class="row featurette mx-2 my-4 p-4 w-100">
+                    <div class="col-md-7 border-start border-warning border-5 p-2 ps-4">
+                        <h2 class="h2 featurette-heading">Lorem ipsum dolor sit. <span class="h3 text-muted">Lorem, ipsum dolor.</span></h2>
+                        <p class="lead text-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusamus
+                            provident a explicabo temporibus labore iste pariatur esse dolore magnam.</p>
+                    </div>
+                    <div class="col-md-5 py-3" align="center">
+                        <img src="assets/images/2.jpg" class="img-fluid mx-auto rounded-1 featurette-image bd-placeholder-img bd-placeholder-img-lg">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center p-5">
+                    <h1 class="h1">Lorem ipsum dolor sit amet.</h1>
+                </div>
+    
+                <div class="row w-100">
+                    <div class="col-lg-6 col-xl-4 p-3" align="center">
+                        <h1 class="display-4 text-primary"><i class="fa-brands fa-bitcoin"></i></h1>
+                        <h2 class="h2">Bitcoin</h2>
+                        <h6 class="h6">Endereço: </h6>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="14DVQErWme4PBWQJyY7CR2SEQhivapRz4p" aria-label="14DVQErWme4PBWQJyY7CR2SEQhivapRz4p" aria-describedby="button-bitcoin">
+                            <button class="btn btn-outline-warning" type="button" id="button-bitcoin">
+                                <i class="fa-solid fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 p-3" align="center">
+                        <h1 class="display-4 text-primary"><i class="fa-brands fa-ethereum"></i></h1>
+                        <h2 class="h2">Ethereum</h2>
+                        <h6 class="h6">Endereço: </h6>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="0x24b42a45b8cc67061c251fdfed771a05a36605e5" aria-label="0x24b42a45b8cc67061c251fdfed771a05a36605e5" aria-describedby="button-ethereum">
+                            <button class="btn btn-outline-warning" type="button" id="button-ethereum">
+                                <i class="fa-solid fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 p-3" align="center">
+                        <h1 class="display-4 text-primary"><i class="fa-brands fa-pix"></i></h1>
+                        <h2 class="h2">Pix</h2>
+                        <h6 class="h6">Chave: </h6>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="358246c5-4865-4286-906a-708e098eaaca" aria-label="358246c5-4865-4286-906a-708e098eaaca" aria-describedby="button-pix">
+                            <button class="btn btn-outline-warning" type="button" id="button-pix">
+                                <i class="fa-solid fa-copy"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div> 
 
-            <div class="row m-0 my-2 w-100">
-                <div class="col-md-6 bg-primary p-5" align=""center>
-                    <img class="img-fluid" src="assets/images/doli.png">
-                </div>
-                <div class="col-md-6 bg-light text-dark p-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum amet accusamus minima saepe possimus ipsam quis quia provident! Cupiditate, officia!
-                </div>
-            </div> 
-
-            <div class="d-flex justify-content-center p-5">
-                <h1 class="h1">Lorem ipsum dolor sit amet.</h1>
-            </div>
-
-            <div class="row m-0 m-y-2 p-4 w-100">
-                <div class="col-lg-6 col-xl-4 m-y-2" align="center">
-                    <h1 class="display-1"><i class="fa-brands fa-bitcoin"></i></h1>
-                    <h2 class="h2">Bitcoin</h2>
-                    <h6>Endereço: </h6>
-                    <p>14DVQErWme4PBWQJyY7CR2SEQhivapRz4p</p>
-                </div>
-                <div class="col-lg-6 col-xl-4 m-y-2" align="center">
-                    <h1 class="display-1"><i class="fa-brands fa-ethereum"></i></h1>
-                    <h2 class="h2">Ethereum</h2>
-                    <h6>Endereço: </h6>
-                    <p>0x24b42a45b8cc67061c251fdfed771a05a36605e5</p>
-                </div>
-                <div class="col-lg-6 col-xl-4 m-y-2" align="center">
-                    <h1 class="display-1"><i class="fa-brands fa-pix"></i></h1>
-                    <h2 class="h2">Pix</h2>
-                    <h6>Chave: </h6>
-                    <p>358246c5-4865-4286-906a-708e098eaaca</p>
-                </div>
-            </div>
         </div>
     </main>
 

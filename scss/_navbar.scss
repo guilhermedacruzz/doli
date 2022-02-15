@@ -13,7 +13,19 @@
         }
     }
 
+    .btn-buy {
+        @extend .btn-outline-light;
+        color: $warning;
+        border-color: $warning;
+
+        &:hover {
+            background-color: $warning;
+            border-color: $warning;
+        }
+    }
+
     .navbar-brand {
+        color: $secondary; 
         font-size: $font-size-base * 1.6;
         text-transform: uppercase;
         letter-spacing: 2px;
