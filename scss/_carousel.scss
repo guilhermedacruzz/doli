@@ -15,13 +15,13 @@
 
         &:hover {
             .fa-arrow-right {
-                color: $warning;
+                color: $primary;
                 margin-left: 20px;
                 transform: scaleX(-1);
             }
 
             .fa-arrow-left {
-                color: $warning;
+                color: $primary;
                 margin-right: 20px;
                 transform: scaleX(-1);
             }
@@ -36,10 +36,10 @@
 
 @media only screen and (min-width: 992px) {
     .carousel-content-left {
-        border-left: 8px solid $warning;
+        border-left: 8px solid $primary;
     }
 
     .carousel-content-right {
-        border-right: 8px solid $warning;
+        border-right: 8px solid $primary;
     }
 }

@@ -1,13 +1,25 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
-$primary:       #59656f;
-$secondary:     #ac9fbb;
-$warning:       #ddbdd5;
-$light:         #f7ebec;
-$dark:          #1d1e2c;
+$primary:       #e4b61a;
+$secondary:     #fbe134;
+$light:         #e9eaec;
+$dark:          #0b0c0c;
 
 $font-family-sans-serif: "Poppins", sans-serif;
+
+body::-webkit-scrollbar {
+    width: 12px; 
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff44; 
+    border: none;
+}
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
