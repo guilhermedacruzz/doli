@@ -1,0 +1,10 @@
+@import "../node_modules/bootstrap/scss/list-group";
+
+.list-group-footer {
+    @extend .list-group-horizontal;
+
+    .list-group-item {
+        background-color: transparent;
+        border: none;
+    }
+}
