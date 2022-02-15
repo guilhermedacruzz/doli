@@ -8,19 +8,19 @@
         .nav-link {
             &:hover,
             &:focus {
-                color: $warning;
+                color: $primary;
             }
         }
     }
 
     .btn-buy {
         @extend .btn-outline-light;
-        color: $warning;
-        border-color: $warning;
+        color: $primary;
+        border-color: $primary;
 
         &:hover {
-            background-color: $warning;
-            border-color: $warning;
+            background-color: $primary;
+            border-color: $primary;
         }
     }
 
@@ -33,7 +33,7 @@
 
         &:hover,
         &:focus {
-            color: $warning;
+            color: $primary;
             cursor: pointer;
         }
     }
